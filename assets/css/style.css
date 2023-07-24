@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     /* Ensure the page takes up the full viewport height */
-    margin: 0;
+    margin: 0 auto;
     /* Remove default body margin */
 }
 
@@ -31,6 +31,10 @@ body {
 .puzzle-tile:empty {
     background-color: #ccc;
     /* Customize the empty tile appearance */
+}
+
+.turns {
+    
 }
 
 @media (max-width: 600px) {
