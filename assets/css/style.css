@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensure the page takes up the full viewport height */
+    margin: 0;
+    /* Remove default body margin */
+}
+
+.puzzle-wrapper {
+    display: flex;
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.puzzle-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.puzzle-tile:empty {
+    background-color: #ccc;
+    /* Customize the empty tile appearance */
+}
+
+@media (max-width: 600px) {
+    .puzzle-tile {
+        font-size: 8vw;
+    }
+}
