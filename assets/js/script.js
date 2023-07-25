@@ -39,9 +39,31 @@ function onTileClick() {
     if (Math.abs(emptyIndex - currentIndex) === 1 || Math.abs(emptyIndex - currentIndex) === 3) {
         [emptyTile.innerText, currentTile.innerText] = [currentTile.innerText, emptyTile.innerText];
         incrementScore(); // Increment the score on a valid move
+
+        if (checkWin()) {
+            showWinMessage(); // Display the win message if the puzzle is solved
+        }
     }
 }
 
 // Add click event listener to each tile
 const tiles = document.querySelectorAll('.puzzle-tile');
 tiles.forEach(tile => tile.addEventListener('click', onTileClick));
+
+// Function to check if the puzzle is solved
+function checkWin() {
+    const tiles = document.querySelectorAll('.puzzle-tile');
+
+    for (let i = 0; i < tiles.length - 1; i++) {
+        if (tiles[i].innerText !== String(i + 1)) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// Function to display the win message
+function showWinMessage() {
+    alert('Congratulations! You solved the puzzle!');
+}
