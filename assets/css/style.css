@@ -12,7 +12,6 @@ body {
     align-items: center;
     height: 100vh;
     /* Ensure the page takes up the full viewport height */
-    background-image: url('mario-world-bground.jpg');
 }
 
 .puzzle-wrapper {
