@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     /* Ensure the page takes up the full viewport height */
+    background-image: url(../images/mario-and-yoshi-full.jpg);
 }
 
 .puzzle-wrapper {
