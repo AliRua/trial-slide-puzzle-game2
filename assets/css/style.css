@@ -28,7 +28,6 @@ body {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
-    border: 5px solid black;
     background-image: url(../images/mario-3x3-full.jpg);
 }
 
