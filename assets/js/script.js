@@ -4,7 +4,7 @@ function shufflePuzzle() {
 
     //Reset score on shuffle button click
     moves = 0; // Reset moves to 0 when shuffling
-    document.getElementById('score').textContent = 'Turns: ' + moves; // Update the score display
+    document.getElementById('score').textContent = 'Moves: ' + moves; // Update the score display
 
     // Taken from stackOverflow
     for (let i = tileArray.length - 1; i > 0; i--) {
@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // Increment score
 let moves = 0; // Initialize moves to 0
 
-// Function to increment the score/turn counter
+// Function to increment the score/moves counter
 function incrementScore() {
     moves++;
-    document.getElementById('score').textContent = 'Turns: ' + moves;
+    document.getElementById('score').textContent = 'Moves: ' + moves;
 }
 
 // Function to handle tile click
@@ -101,7 +101,7 @@ function checkWin() {
 
 // Function to display the win message
 function showWinMessage() {
-    alert('Congratulations! You solved the puzzle!');
+    alert('Awesome! You solved it All!!');
 }
 
 
